@@ -15,10 +15,10 @@
         </div>
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
             <li><a href="{% url 'home' %}" class="nav-link px-2 link-secondary">Главная</a></li>
-            <li><a href="#" class="nav-link px-2">Features</a></li>
-            <li><a href="#" class="nav-link px-2">Pricing</a></li>
+            <li><a href="{% url 'tasks' %}" class="nav-link px-2">Задачи</a></li>
+            <li><a href="{% url 'create_task' %}" class="nav-link px-2">Создать задачу</a></li>
             <li><a href="#" class="nav-link px-2">FAQs</a></li>
-            <li><a href="{% url 'create' %}" class="nav-link px-2">Задать вопрос</a></li>
+            <li><a href="{% url 'create_question' %}" class="nav-link px-2">Задать вопрос</a></li>
             <li><a href="{% url 'about' %}" class="nav-link px-2">Про нас</a></li>
         </ul>
         <div class="col-md-3 text-end">

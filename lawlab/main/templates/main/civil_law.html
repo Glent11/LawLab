@@ -5,19 +5,20 @@
 {% endblock %}
 
 {% block content %}
-    <h1>Главная страница</h1>
-    <h3>Разделы:</h3>
+    <h1>Гражданское право</h1>
+    <h3>Судебные решения:</h3>
     <ul>
         <li><a href="{% url 'civil_law' %}" class="nav-link px-2">Гражданское право</a></li>
         <li><a href="{% url 'home' %}" class="nav-link px-2">Административное право</a></li>
         <li><a href="{% url 'home' %}" class="nav-link px-2">Лево</a></li>
         <li><a href="{% url 'home' %}" class="nav-link px-2">Пупупу</a></li>
     </ul>
-    {% if questions %}
-        {% for q in questions %}
-            <div class="alert alert-warning mt-2">
-                <h3>{{ q.title }}</h3>
-                <p>{{ q.question }}</p>
+    {% if court_decisions %}
+        {% for cd in court_decisions %}
+            <div class="alert alert-info mt-2">
+                <h3>{{ cd.title }}</h3>
+                <p>{{ cd.body }}</p>
+                <p>{{ cd.decision }}</p>
             </div>
         {% endfor %}
     {% else %}

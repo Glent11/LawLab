@@ -1,0 +1,4 @@
+/.venv/
+/.idea/
+/.env
+/lawlab/db.sqlite3
